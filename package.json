@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "post-commit": "node bundlesize"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/veksen/bundlesize.git"
@@ -15,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/veksen/bundlesize/issues"
   },
-  "homepage": "https://github.com/veksen/bundlesize#readme"
+  "homepage": "https://github.com/veksen/bundlesize#readme",
+  "dependencies": {
+    "husky": "^1.0.0-rc.13",
+    "lodash": "^4.17.10",
+    "parcel": "^1.9.7"
+  }
 }
